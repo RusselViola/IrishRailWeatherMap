@@ -73,6 +73,14 @@ exists( //ns1:ArrayOfObjTrainPositions/ns1:objTrainPositions/ns1:TrainLatitude)<
         <con:parameterOrder>
           <con:entry>TrainType</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="2eeeae02-9133-458b-8feb-15a4d82676ce">
+            <con:authProfile>No Authorization</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="0325dd47-62b3-42a0-bb96-3ab14a8e2ab9">
+            <con:authProfile>No Authorization</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -187,6 +195,14 @@ exists( //ns1:ArrayOfObjTrainPositions/ns1:objTrainPositions/ns1:TrainLatitude)<
           <con:entry>lon</con:entry>
           <con:entry>APPID</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="2eeeae02-9133-458b-8feb-15a4d82676ce">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="0325dd47-62b3-42a0-bb96-3ab14a8e2ab9">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>

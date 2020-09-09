@@ -28,6 +28,12 @@
       <con:params/>
       <con:element>data</con:element>
     </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml;charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element>data</con:element>
+    </con:representation>
     <con:request name="Request 1" id="bd9b52a2-759c-48d7-a956-64daca369fa8" mediaType="application/json">
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -46,6 +52,14 @@
       <con:parameterOrder>
         <con:entry>TrainType</con:entry>
       </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="2eeeae02-9133-458b-8feb-15a4d82676ce">
+          <con:authProfile>No Authorization</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0325dd47-62b3-42a0-bb96-3ab14a8e2ab9">
+          <con:authProfile>No Authorization</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
 </con:resource>

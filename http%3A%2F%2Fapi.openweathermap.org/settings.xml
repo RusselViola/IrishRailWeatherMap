@@ -6,5 +6,6 @@
   <con:definitionCache type="TEXT" rootPart=""/>
   <con:endpoints>
     <con:endpoint>http://api.openweathermap.org</con:endpoint>
+    <con:endpoint>http://localhost:8090/</con:endpoint>
   </con:endpoints>
 </con:interface>

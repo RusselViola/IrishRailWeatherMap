@@ -38,6 +38,18 @@
       <con:params/>
       <con:element xmlns:weat="http://api.openweathermap.org/data/2.5/weather">weat:Response</con:element>
     </con:representation>
+    <con:representation type="FAULT">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:element xmlns:weat="http://api.openweathermap.org/data/2.5/weather">weat:Fault</con:element>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json;charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:weat="http://api.openweathermap.org/data/2.5/weather">weat:Response</con:element>
+    </con:representation>
     <con:request name="Request 1" id="b8fbdd5d-8f7b-4ece-b516-63fdf28e91ac" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://api.openweathermap.org</con:endpoint>
@@ -57,6 +69,14 @@
         <con:entry>lon</con:entry>
         <con:entry>APPID</con:entry>
       </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="2eeeae02-9133-458b-8feb-15a4d82676ce">
+          <con:authProfile>No Authorization</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0325dd47-62b3-42a0-bb96-3ab14a8e2ab9">
+          <con:authProfile>No Authorization</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
 </con:resource>

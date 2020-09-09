@@ -3,3 +3,5 @@ http%3A%2F%2Fapi.openweathermap.org\Weather.xml
 http%3A%2F%2Fapi.irishrail.ie-TestSuite\TestCase-1.xml
 http%3A%2F%2Fapi.irishrail.ie-TestSuite\TestCase-2.xml
 http%3A%2F%2Fapi.irishrail.ie-TestSuite\TestCase-3.xml
+http%3A%2F%2Fapi.irishrail.ie-Virtual-Service\%2Frealtime%2Frealtime.asmx%2FgetCurrentTrainsXML_WithTrainType.xml
+http%3A%2F%2Fapi.openweathermap.org-Virtual-Service\%2Fdata%2F2.5%2Fweather.xml
