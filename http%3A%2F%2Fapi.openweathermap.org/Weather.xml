@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Weather" path="/data/2.5/weather" id="13e17673-f1ff-498e-a455-62827c0709c4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="13e17673-f1ff-498e-a455-62827c0709c4fileName">Weather</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter>
+      <con:name>lat</con:name>
+      <con:value>35</con:value>
+      <con:style>QUERY</con:style>
+      <con:default>35</con:default>
+      <con:path xsi:nil="true"/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+    <con:parameter>
+      <con:name>lon</con:name>
+      <con:value>139</con:value>
+      <con:style>QUERY</con:style>
+      <con:default>139</con:default>
+      <con:path xsi:nil="true"/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+    <con:parameter>
+      <con:name>APPID</con:name>
+      <con:value>7e97e6a5d09cc6eb10a5586f9983cd3f</con:value>
+      <con:style>QUERY</con:style>
+      <con:default>7e97e6a5d09cc6eb10a5586f9983cd3f</con:default>
+      <con:path xsi:nil="true"/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="Weather" id="3c847d7c-3755-40df-949b-2d54ae8de583" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:weat="http://api.openweathermap.org/data/2.5/weather">weat:Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="b8fbdd5d-8f7b-4ece-b516-63fdf28e91ac" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://api.openweathermap.org</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="APPID" value="7e97e6a5d09cc6eb10a5586f9983cd3f"/>
+        <con:entry key="lon" value="139"/>
+        <con:entry key="lat" value="35"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>lat</con:entry>
+        <con:entry>lon</con:entry>
+        <con:entry>APPID</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

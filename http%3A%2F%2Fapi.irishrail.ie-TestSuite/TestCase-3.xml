@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="b8a279d7-e2ab-4527-99e9-dd5205cf2ee9" discardOkResults="true" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TestCase 3" searchProperties="true" maxResults="0" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b8a279d7-e2ab-4527-99e9-dd5205cf2ee9fileName">TestCase-3</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="DataSource" id="fcfc56db-ff38-4033-a571-8287d87f9e75">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Grid">
+        <con:configuration>
+          <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">S&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">A&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">M&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">D&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">S&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">A&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">M&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">D&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">S&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">A&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">M&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">D&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <recognizeAsPlainText>true</recognizeAsPlainText>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>TrainType</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Running Trains" id="938884c4-a2d6-4aad-a19e-48f41b6eed9a">
+    <con:settings/>
+    <con:config service="http://api.irishrail.ie" resourcePath="/realtime/realtime.asmx/getCurrentTrainsXML_WithTrainType" methodName="GetCurrentTrainsXML_WithTrainType" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Running Trains" id="bd9b52a2-759c-48d7-a956-64daca369fa8" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://api.irishrail.ie</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://api.irishrail.ie/realtime/realtime.asmx/getCurrentTrainsXML_WithTrainType</con:originalUri>
+        <con:assertion type="XPath Match" id="aa36c89c-3665-447e-a802-69a80c600434" name="Check for existence of [TrainLatitude]">
+          <con:configuration>
+            <path>declare namespace ns1='http://api.irishrail.ie/realtime/';
+exists( //ns1:ArrayOfObjTrainPositions/ns1:objTrainPositions/ns1:TrainLatitude)</path>
+            <content>true</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Valid HTTP Status Codes" id="246c631b-cec5-40b0-86ea-14a8fff29398" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="a2805704-4199-4ea7-bfd4-65267016bb8a" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="TrainType" value="${DataSource#TrainType}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>TrainType</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Weather from Third Train" id="635248ac-35d3-4125-b938-720d7130a2a6">
+    <con:settings/>
+    <con:config service="http://api.openweathermap.org" resourcePath="/data/2.5/weather" methodName="Weather" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Weather from Third Train" id="b8fbdd5d-8f7b-4ece-b516-63fdf28e91ac" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://api.openweathermap.org</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://api.openweathermap.org/data/2.5/weather</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="ac564952-a1f0-4322-8774-fa38f45b092d" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="6f703d4f-f219-4063-948f-e7c95ebee35c" name="Match content of [country]">
+          <con:configuration>
+            <path>$['sys']['country']</path>
+            <content>IE</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Existence Match" id="ac2d4c02-4234-4337-94d1-d4e7f31fbbe5" name="Check for existence of [main]">
+          <con:configuration>
+            <path>$['weather'][0]['main']</path>
+            <content>true</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="MessageContentAssertion" id="586eb661-e7a3-4068-a62f-cee1600a7374" name="Message Content Assertion">
+          <con:configuration xsi:type="con:MessageContentAssertion">
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://api.openweathermap.org/data/2.5/weather';
+//ns1:Response[1]/ns1:wind[1]/ns1:speed[1]</con:xpath>
+              <con:element>speed</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>></con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>20</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>true</con:numberType>
+            </con:elements>
+            <con:originalMessage><![CDATA[<Response xmlns="http://api.openweathermap.org/data/2.5/weather">
+   <base>stations</base>
+   <clouds>
+      <all>20</all>
+   </clouds>
+   <cod>200</cod>
+   <coord>
+      <lat>51.9</lat>
+      <lon>-8.47</lon>
+   </coord>
+   <dt>1486148400</dt>
+   <id>2965140</id>
+   <main>
+      <humidity>87</humidity>
+      <pressure>989</pressure>
+      <temp>276.15</temp>
+      <temp_max>276.15</temp_max>
+      <temp_min>276.15</temp_min>
+   </main>
+   <name>Cork</name>
+   <sys>
+      <country>IE</country>
+      <id>5236</id>
+      <message>0.1616</message>
+      <sunrise>1486109316</sunrise>
+      <sunset>1486142862</sunset>
+      <type>1</type>
+   </sys>
+   <visibility>10000</visibility>
+   <weather>
+      <e>
+         <description>few clouds</description>
+         <icon>02n</icon>
+         <id>801</id>
+         <main>Clouds</main>
+      </e>
+   </weather>
+   <wind>
+      <deg>250</deg>
+      <speed>3.6</speed>
+   </wind>
+</Response>]]></con:originalMessage>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="311e43d4-bf6b-4339-aa59-caf062047069" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="APPID" value="7e97e6a5d09cc6eb10a5586f9983cd3f"/>
+          <con:entry key="lon" value="${Running Trains#Response#declare namespace ns1='http://api.irishrail.ie/realtime/'; //ns1:ArrayOfObjTrainPositions[1]/ns1:objTrainPositions[3]/ns1:TrainLongitude[1]}"/>
+          <con:entry key="lat" value="${Running Trains#Response#declare namespace ns1='http://api.irishrail.ie/realtime/'; //ns1:ArrayOfObjTrainPositions[1]/ns1:objTrainPositions[3]/ns1:TrainLatitude[1]}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>lat</con:entry>
+          <con:entry>lon</con:entry>
+          <con:entry>APPID</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="delay" name="1000" id="25365f57-be73-4cdc-8468-f4d7997c21cf">
+    <con:settings/>
+    <con:config>
+      <delay>1000</delay>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="f447b964-3d2d-4b10-8b19-360fe5e5e5bb">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>DataSource</dataSourceStep>
+      <targetStep>Running Trains</targetStep>
+      <discardResults>false</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>e08149fa-38fa-433c-9dc9-3e8f35d2af32</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

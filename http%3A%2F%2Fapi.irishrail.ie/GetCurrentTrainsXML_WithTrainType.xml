@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="GetCurrentTrainsXML_WithTrainType" path="/realtime/realtime.asmx/getCurrentTrainsXML_WithTrainType" id="040928ea-5e29-49db-81b7-2a663e1a8a33" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="040928ea-5e29-49db-81b7-2a663e1a8a33fileName">GetCurrentTrainsXML_WithTrainType</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter>
+      <con:name>TrainType</con:name>
+      <con:value>D</con:value>
+      <con:style>QUERY</con:style>
+      <con:default>D</con:default>
+      <con:path xsi:nil="true"/>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GetCurrentTrainsXML_WithTrainType" id="b2b99252-635e-4787-8276-997a8f11ff5b" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml; charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:real="http://api.irishrail.ie/realtime/">real:ArrayOfObjTrainPositions</con:element>
+    </con:representation>
+    <con:representation type="FAULT">
+      <con:mediaType>text/plain; charset=utf-8</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:element>data</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="bd9b52a2-759c-48d7-a956-64daca369fa8" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://api.irishrail.ie</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://api.irishrail.ie/realtime/realtime.asmx/getCurrentTrainsXML_WithTrainType</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="TrainType" value="D"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>TrainType</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

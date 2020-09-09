@@ -1,0 +1,5 @@
+http%3A%2F%2Fapi.irishrail.ie\GetCurrentTrainsXML_WithTrainType.xml
+http%3A%2F%2Fapi.openweathermap.org\Weather.xml
+http%3A%2F%2Fapi.irishrail.ie-TestSuite\TestCase-1.xml
+http%3A%2F%2Fapi.irishrail.ie-TestSuite\TestCase-2.xml
+http%3A%2F%2Fapi.irishrail.ie-TestSuite\TestCase-3.xml
