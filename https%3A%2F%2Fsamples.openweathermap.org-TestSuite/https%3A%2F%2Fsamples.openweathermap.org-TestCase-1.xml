@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="532dac36-b4a8-49b7-8c77-72bb751426e0" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="https://samples.openweathermap.org TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="532dac36-b4a8-49b7-8c77-72bb751426e0fileName">https%3A%2F%2Fsamples.openweathermap.org-TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="Request 1" id="b16286a6-5ce8-4ad6-bc45-a77c11205b9e">
+    <con:settings/>
+    <con:config service="https://samples.openweathermap.org" resourcePath="/data/2.5/weather" methodName="Weather" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="fe2a434a-dc77-4b55-83c5-9fad8f09b521" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://localhost:8090/</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://samples.openweathermap.org/data/2.5/weather</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="cb57b958-8051-4d8a-ae6c-ce0887aa45ea" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="c3695f12-a094-44ee-88cb-eb62bce3e0a1" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:parameterOrder>
+          <con:entry>q</con:entry>
+          <con:entry>appid</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

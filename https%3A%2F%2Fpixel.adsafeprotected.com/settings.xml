@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="93cbc7dd-c9a0-48a0-8cfc-bffabce35480" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://pixel.adsafeprotected.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="93cbc7dd-c9a0-48a0-8cfc-bffabce35480fileName">https%3A%2F%2Fpixel.adsafeprotected.com</con:setting>
+  </con:settings>
+  <con:definitionCache/>
+  <con:endpoints>
+    <con:endpoint>https://pixel.adsafeprotected.com</con:endpoint>
+  </con:endpoints>
+</con:interface>

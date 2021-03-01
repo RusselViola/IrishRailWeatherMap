@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Rd" path="/id/rd" id="afcd9b55-a829-46a3-91e5-fe391eb43d0b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="afcd9b55-a829-46a3-91e5-fe391eb43d0bfileName">Rd</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Rd" id="901972ef-760b-4dfc-9b11-8888d50d8204" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>d_visid_ver</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>d_fieldgroup</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>d_rtbd</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>d_ver</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>d_verify</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>d_orgid</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>d_nsid</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>ts</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Origin</con:name>
+        <con:style>HEADER</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="a8fcfbed-9343-4328-b55e-072ea47ccf90" mediaType="application/x-www-form-urlencoded">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Origin" value="https://www.bestbuy.com"/>
+  <con:entry key="Accept-Charset" value="ISO-8859-1,utf-8;q=0.7,*;q=0.7"/>
+  <con:entry key="Accept" value="*/*"/>
+  <con:entry key="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/609.1 (KHTML, like Gecko) JavaFX/15 Safari/609.1"/>
+  <con:entry key="Referer" value="https://www.bestbuy.com/"/>
+  <con:entry key="Accept-Encoding" value="gzip"/>
+  <con:entry key="Accept-Language" value="en-us;q=0.8,en;q=0.7"/>
+  <con:entry key="Content-Type" value="application/x-www-form-urlencoded"/>
+</xml-fragment>]]></con:setting>
+      </con:settings>
+      <con:endpoint>https://dpm.demdex.net</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://dpm.demdex.net/id/rd</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="d_visid_ver" value="4.4.0"/>
+        <con:entry key="Origin" value="https://www.bestbuy.com"/>
+        <con:entry key="d_verify" value="1"/>
+        <con:entry key="d_fieldgroup" value="MC"/>
+        <con:entry key="d_ver" value="2"/>
+        <con:entry key="d_nsid" value="0"/>
+        <con:entry key="d_orgid" value="F6301253512D2BDB0A490D45@AdobeOrg"/>
+        <con:entry key="d_rtbd" value="json"/>
+        <con:entry key="ts" value="1614194652339"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>d_visid_ver</con:entry>
+        <con:entry>d_fieldgroup</con:entry>
+        <con:entry>d_rtbd</con:entry>
+        <con:entry>d_ver</con:entry>
+        <con:entry>d_verify</con:entry>
+        <con:entry>d_orgid</con:entry>
+        <con:entry>d_nsid</con:entry>
+        <con:entry>ts</con:entry>
+        <con:entry>Origin</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

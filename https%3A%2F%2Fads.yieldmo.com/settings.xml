@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="0b180b0e-a183-42fb-bb31-f666e41e01f1" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://ads.yieldmo.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0b180b0e-a183-42fb-bb31-f666e41e01f1fileName">https%3A%2F%2Fads.yieldmo.com</con:setting>
+  </con:settings>
+  <con:definitionCache/>
+  <con:endpoints>
+    <con:endpoint>https://ads.yieldmo.com</con:endpoint>
+  </con:endpoints>
+</con:interface>

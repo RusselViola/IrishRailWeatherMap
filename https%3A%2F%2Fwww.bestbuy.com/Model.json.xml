@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Model.json" path="/api/tcfb/model.json" id="95c40837-665f-4e5e-9224-6640e0db4528" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="95c40837-665f-4e5e-9224-6640e0db4528fileName">Model.json</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Model.json" id="3b02290c-816b-4601-b3a0-10961d18e218" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>paths</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>method</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="0679b247-6eac-4795-87b9-11129a2c768c" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Accept-Charset" value="ISO-8859-1,utf-8;q=0.7,*;q=0.7"/>
+  <con:entry key="Accept" value="*/*"/>
+  <con:entry key="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/609.1 (KHTML, like Gecko) JavaFX/15 Safari/609.1"/>
+  <con:entry key="Referer" value="https://www.bestbuy.com/"/>
+  <con:entry key="Accept-Encoding" value="gzip"/>
+  <con:entry key="Accept-Language" value="en-us;q=0.8,en;q=0.7"/>
+</xml-fragment>]]></con:setting>
+      </con:settings>
+      <con:endpoint>https://www.bestbuy.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://www.bestbuy.com/api/tcfb/model.json</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="method" value="get"/>
+        <con:entry key="paths" value="[[&quot;shop&quot;,&quot;scds&quot;,&quot;v2&quot;,&quot;page&quot;,&quot;tenants&quot;,&quot;bbypres&quot;,&quot;pages&quot;,&quot;stips_container&quot;]]"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>paths</con:entry>
+        <con:entry>method</con:entry>
+      </con:parameterOrder>
+    </con:request>
+    <con:request name="Request 2" id="49e34308-2f26-4460-8ee1-e7cf4e770ab2" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Accept-Charset" value="ISO-8859-1,utf-8;q=0.7,*;q=0.7"/>
+  <con:entry key="Accept" value="*/*"/>
+  <con:entry key="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/609.1 (KHTML, like Gecko) JavaFX/15 Safari/609.1"/>
+  <con:entry key="Referer" value="https://www.bestbuy.com/"/>
+  <con:entry key="Accept-Encoding" value="gzip"/>
+  <con:entry key="Accept-Language" value="en-us;q=0.8,en;q=0.7"/>
+</xml-fragment>]]></con:setting>
+      </con:settings>
+      <con:endpoint>https://www.bestbuy.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://www.bestbuy.com/api/tcfb/model.json</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="method" value="get"/>
+        <con:entry key="paths" value="[[&quot;shop&quot;,&quot;calligator&quot;,&quot;v1&quot;,&quot;flattened&quot;,&quot;hierarchy&quot;,&quot;categoryIds&quot;,&quot;cat00000&quot;,&quot;broaderTerm&quot;,&quot;primaryLineage&quot;,&quot;length&quot;]]"/>
+      </con:parameters>
+    </con:request>
+    <con:request name="Request 3" id="c1dd4e97-85f5-4e80-bffa-591904051df3" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Accept-Charset" value="ISO-8859-1,utf-8;q=0.7,*;q=0.7"/>
+  <con:entry key="Accept" value="*/*"/>
+  <con:entry key="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/609.1 (KHTML, like Gecko) JavaFX/15 Safari/609.1"/>
+  <con:entry key="Referer" value="https://www.bestbuy.com/"/>
+  <con:entry key="Accept-Encoding" value="gzip"/>
+  <con:entry key="Accept-Language" value="en-us;q=0.8,en;q=0.7"/>
+</xml-fragment>]]></con:setting>
+      </con:settings>
+      <con:endpoint>https://www.bestbuy.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://www.bestbuy.com/api/tcfb/model.json</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="method" value="get"/>
+        <con:entry key="paths" value="[[&quot;shop&quot;,&quot;calligator&quot;,&quot;v1&quot;,&quot;flattened&quot;,&quot;hierarchy&quot;,&quot;categoryIds&quot;,&quot;cat00000&quot;,&quot;broaderTerm&quot;,&quot;primaryLineage&quot;,{&quot;from&quot;:0,&quot;to&quot;:10},&quot;id&quot;]]"/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

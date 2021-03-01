@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/exception" method="POST" resourcePath="/exception" id="ec876846-e87a-4bc7-b34a-2ce73ce9b777" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ec876846-e87a-4bc7-b34a-2ce73ce9b777fileName">%2Fexception</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 2</con:defaultResponse>
+  <con:dispatchStyle>SCRIPT</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:parameterDispatcherRuleContainer/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="500bc8dc-69bd-4ef5-93a5-205bca0c6a1c" httpResponseStatus="200" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" dataSource="test">
+    <con:settings/>
+    <con:responseContent>{"message":"OK",
+"GUID" : "${#MockResponse#test}"}</con:responseContent>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>https://www.bestbuy.com</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Methods</con:name>
+      <con:value>POST</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>keep-alive</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Wed, 24 Feb 2021 19:28:13 GMT</con:value>
+    </con:header>
+  </con:response>
+  <con:response name="Response 2" id="53d2b132-5447-4296-8b36-af3e78b15280" httpResponseStatus="200" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" dataSource="">
+    <con:settings/>
+    <con:responseContent>{"message":"OK"}</con:responseContent>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>https://www.bestbuy.com</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Methods</con:name>
+      <con:value>POST</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>keep-alive</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Wed, 24 Feb 2021 19:28:16 GMT</con:value>
+    </con:header>
+  </con:response>
+</con:restMockAction>

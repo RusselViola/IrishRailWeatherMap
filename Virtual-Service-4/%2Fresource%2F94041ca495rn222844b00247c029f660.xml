@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/resource/94041ca495rn222844b00247c029f660" method="POST" resourcePath="/resource/94041ca495rn222844b00247c029f660" id="73694390-9088-4d01-a7c8-19a6342b705d" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="73694390-9088-4d01-a7c8-19a6342b705dfileName">%2Fresource%2F94041ca495rn222844b00247c029f660</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>QUERY_MATCH</con:dispatchStyle>
+  <con:dispatchConfig xsi:type="con:MockOperationQueryMatchDispatch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:query>
+      <con:name>test</con:name>
+      <con:type>JSONPath</con:type>
+    </con:query>
+  </con:dispatchConfig>
+  <con:dispatchXPath/>
+  <con:parameterDispatcherRuleContainer/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="8838441e-24be-4323-9db7-7afdc3561699" httpResponseStatus="201" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" dataSource="">
+    <con:settings/>
+    <con:responseContent>{"success":true}</con:responseContent>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>https://www.bestbuy.com</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>https://www.bestbuy.com</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>keep-alive</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Forwarded-Proto</con:name>
+      <con:value>https</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Headers</con:name>
+      <con:value>Content-Type</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Wed, 24 Feb 2021 19:28:08 GMT</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Strict-Transport-Security</con:name>
+      <con:value>max-age=15768000</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Credentials</con:name>
+      <con:value>true</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Credentials</con:name>
+      <con:value>true</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Set-Cookie</con:name>
+      <con:value>_abck=B02BEED737482836E100F71ECE16AD4C~0~YAAQD2l8aOof/rV3AQAASE+D1QXRLXBu7f2RpbC3kiYT6U0ZQMMfnmiQLkjpr2sYySfsaPUz5RQUvolwY/FsHTDPx8CMDVfynQ0YaBvrgjLU6qGv7CEP5U71tvd8/m04YWFuA/0yznuPBdz2w9xKpNyISJdbk434WHHjX/VAj474hgC2FUwQdjddd+jexUbdYSSYo0TjjSxGCNqudh1k4EmRS6uGXNJ7gE2fpDGVFW0gqHIXYm7dBegbBKmiZbsRPAJAWJYZnqhnjRwJ6gAmrg5IpTv89HU6KbRAQG2izoYTF2pFMmtCOXySkys6jspFSsR7EQ6CM5cqhpx0wNbx+/jAHRkIlHxCu58ivHhe3I3U+3IKgZz9OCm+zhGe3TDCujv0U2KL++3qWu4=~-1~||1-MqccaWPWyi-1-10-1000-2||~-1; Domain=.bestbuy.com; Path=/; Expires=Thu, 24 Feb 2022 19:28:08 GMT; Max-Age=31536000; Secure</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Vary</con:name>
+      <con:value>Origin</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Employment</con:name>
+      <con:value>If you are reading this, consider a job at BestBuy.com http://www.bestbuy-jobs.com/job-family/all-corporate-careers/</con:value>
+    </con:header>
+  </con:response>
+  <con:response name="Response 2" id="ca859aad-57b8-4bdf-aaa5-1a88398d86bc" httpResponseStatus="201" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" dataSource="">
+    <con:settings/>
+    <con:responseContent>{"success":true}</con:responseContent>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>https://www.bestbuy.com</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>https://www.bestbuy.com</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>keep-alive</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Forwarded-Proto</con:name>
+      <con:value>https</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Headers</con:name>
+      <con:value>Content-Type</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Wed, 24 Feb 2021 19:28:09 GMT</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Strict-Transport-Security</con:name>
+      <con:value>max-age=15768000</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Credentials</con:name>
+      <con:value>true</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Credentials</con:name>
+      <con:value>true</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Set-Cookie</con:name>
+      <con:value>_abck=B02BEED737482836E100F71ECE16AD4C~0~YAAQT2l8aO24KMl3AQAA0lSD1QUg+ESZUb7V2jbS3p2U8VJvpIPXuDuc8aWYOEXulX6QMpxaD9CWWKCfVWJdW+IJ4VXN0LbFDoTJpQpW0dJe07SaEavBytZ5Maumanip01B0cjTK57j1F45bi2XMJMmcU1X7yjfDQg6rquxXmVYgMkLkK9przLYoCf5QXe9u4DlIWr4M2pjt6oCPyKZ/CIz0u2wQc+WJPE3WWSs8ETRD36eMpzK70KyIRWeBcdGeoY4N9YcP6p4qP8tATpOCbKpOjhKMFMU4EDFezO3H2RVHVKB5meP+bDd9Jw1Q43DrkzfQWik+0W7KH8AKMTXUHGLRcN+2j/AXvNBjwY0CAXaqkwrkPEbjHCqQXMQhv2UqbV81oh+BZ1MaE7s=~-1~||1-MqccaWPWyi-1-10-1000-2||~-1; Domain=.bestbuy.com; Path=/; Expires=Thu, 24 Feb 2022 19:28:09 GMT; Max-Age=31536000; Secure</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Vary</con:name>
+      <con:value>Origin</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Employment</con:name>
+      <con:value>If you are reading this, consider a job at BestBuy.com http://www.bestbuy-jobs.com/job-family/all-corporate-careers/</con:value>
+    </con:header>
+  </con:response>
+</con:restMockAction>

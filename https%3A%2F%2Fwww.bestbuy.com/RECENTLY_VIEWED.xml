@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="RECENTLY_VIEWED" path="/streams/v3/RECENTLY_VIEWED" id="23c7f3f4-2072-428b-b586-10d12c388b6b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="23c7f3f4-2072-428b-b586-10d12c388b6bfileName">RECENTLY_VIEWED</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="RECENTLY_VIEWED" id="5e5ca98e-e17e-4f81-b56a-d2ecdc45c940" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>limit</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>X-CLIENT-ID</con:name>
+        <con:style>HEADER</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="9f58ae72-95bd-4137-af99-6e9dc4ac01cf" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Accept-Charset" value="ISO-8859-1,utf-8;q=0.7,*;q=0.7"/>
+  <con:entry key="Accept" value="application/json"/>
+  <con:entry key="X-CLIENT-ID" value="recently-viewed-ghp"/>
+  <con:entry key="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/609.1 (KHTML, like Gecko) JavaFX/15 Safari/609.1"/>
+  <con:entry key="Referer" value="https://www.bestbuy.com/"/>
+  <con:entry key="Accept-Encoding" value="gzip"/>
+  <con:entry key="Accept-Language" value="en-us;q=0.8,en;q=0.7"/>
+</xml-fragment>]]></con:setting>
+      </con:settings>
+      <con:endpoint>https://www.bestbuy.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://www.bestbuy.com/streams/v3/RECENTLY_VIEWED</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="limit" value="30"/>
+        <con:entry key="X-CLIENT-ID" value="recently-viewed-ghp"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>limit</con:entry>
+        <con:entry>X-CLIENT-ID</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

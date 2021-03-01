@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/browse-api/1.0/pageConfiguration/bbypres/pcmcat1490883537075/857b091a-7b26-4e3a-90db-363cc03e80c8" method="GET" resourcePath="/browse-api/1.0/pageConfiguration/bbypres/pcmcat1490883537075/857b091a-7b26-4e3a-90db-363cc03e80c8" id="2d561354-d305-40bb-b599-db70357f752d" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2d561354-d305-40bb-b599-db70357f752dfileName">%2Fbrowse-api%2F1.0%2FpageConfiguration%2Fbbypres%2Fpcmcat1490883537075%2F857b091a-7b26-4e3a-90db-363cc03e80c8</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="ed4d7677-eb47-40db-b776-5214e581c67b" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

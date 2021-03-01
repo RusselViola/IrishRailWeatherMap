@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="BasketCount" path="/basket/v1/basketCount" id="58cd98c9-78bf-4af1-8c13-7ef4869df655" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="58cd98c9-78bf-4af1-8c13-7ef4869df655fileName">BasketCount</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="BasketCount" id="6300327f-c249-40c4-8f89-450bfb5b61d8" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>X-CLIENT-ID</con:name>
+        <con:style>HEADER</con:style>
+      </con:parameter>
+      <con:parameter>
+        <con:name>X-REQUEST-ID</con:name>
+        <con:style>HEADER</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="805a35d8-588a-4b18-9d7c-9613e4ab961b" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Accept-Charset" value="ISO-8859-1,utf-8;q=0.7,*;q=0.7"/>
+  <con:entry key="Accept" value="*/*"/>
+  <con:entry key="X-CLIENT-ID" value="browse"/>
+  <con:entry key="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/609.1 (KHTML, like Gecko) JavaFX/15 Safari/609.1"/>
+  <con:entry key="Referer" value="https://www.bestbuy.com/"/>
+  <con:entry key="X-REQUEST-ID" value="global-header-cart-count"/>
+  <con:entry key="Accept-Encoding" value="gzip"/>
+  <con:entry key="Accept-Language" value="en-us;q=0.8,en;q=0.7"/>
+</xml-fragment>]]></con:setting>
+      </con:settings>
+      <con:endpoint>https://www.bestbuy.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://www.bestbuy.com/basket/v1/basketCount</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="X-CLIENT-ID" value="browse"/>
+        <con:entry key="X-REQUEST-ID" value="global-header-cart-count"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>X-CLIENT-ID</con:entry>
+        <con:entry>X-REQUEST-ID</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

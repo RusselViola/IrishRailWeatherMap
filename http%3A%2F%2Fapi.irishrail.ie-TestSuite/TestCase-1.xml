@@ -2,6 +2,11 @@
 <con:testCase id="c575ab9a-5143-459c-b775-a2e32201878c" discardOkResults="true" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" maxResults="0" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="c575ab9a-5143-459c-b775-a2e32201878cfileName">TestCase-1</con:setting>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:testStep type="datasource" name="DataSource" id="e08149fa-38fa-433c-9dc9-3e8f35d2af32">
@@ -28,6 +33,7 @@
       <con:shared>true</con:shared>
       <con:restartShared>true</con:restartShared>
       <con:property>TrainType</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
       <con:restartOnRun>true</con:restartOnRun>
     </con:config>
   </con:testStep>
@@ -36,7 +42,7 @@
     <con:config service="http://api.irishrail.ie" resourcePath="/realtime/realtime.asmx/getCurrentTrainsXML_WithTrainType" methodName="GetCurrentTrainsXML_WithTrainType" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="Running Trains" id="bd9b52a2-759c-48d7-a956-64daca369fa8" mediaType="application/json">
         <con:settings>
-          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authentication" value="${ip}" xmlns="http://eviware.com/soapui/config"/></con:setting>
         </con:settings>
         <con:endpoint>http://api.irishrail.ie</con:endpoint>
         <con:request/>
@@ -68,16 +74,21 @@ exists( //ns1:ArrayOfObjTrainPositions/ns1:objTrainPositions/ns1:TrainLatitude)<
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
+          <con:entry key="newParam" value=""/>
           <con:entry key="TrainType" value="${DataSource#TrainType}"/>
         </con:parameters>
         <con:parameterOrder>
           <con:entry>TrainType</con:entry>
+          <con:entry>newParam</con:entry>
         </con:parameterOrder>
         <con:environmentSpec>
           <con:entry environmentId="2eeeae02-9133-458b-8feb-15a4d82676ce">
             <con:authProfile>No Authorization</con:authProfile>
           </con:entry>
           <con:entry environmentId="0325dd47-62b3-42a0-bb96-3ab14a8e2ab9">
+            <con:authProfile>No Authorization</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="96e6d0f6-2929-4e6c-aac5-59044e9c4ba0">
             <con:authProfile>No Authorization</con:authProfile>
           </con:entry>
         </con:environmentSpec>
@@ -202,6 +213,9 @@ exists( //ns1:ArrayOfObjTrainPositions/ns1:objTrainPositions/ns1:TrainLatitude)<
           <con:entry environmentId="0325dd47-62b3-42a0-bb96-3ab14a8e2ab9">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
+          <con:entry environmentId="96e6d0f6-2929-4e6c-aac5-59044e9c4ba0">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:restRequest>
     </con:config>
@@ -224,6 +238,26 @@ exists( //ns1:ArrayOfObjTrainPositions/ns1:objTrainPositions/ns1:TrainLatitude)<
   <con:reportParameters/>
   <con:breakPoints>
     <con:testStepId>e08149fa-38fa-433c-9dc9-3e8f35d2af32</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>f41f03b6-93c3-4cf3-a98c-bced8ea2a773</con:testStepId>
+    <con:status>ENABLED</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>8b496da6-507c-4ef7-9c7d-bcab40364027</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>dbbfd726-24d7-4420-86a4-0c3d97ed1dba</con:testStepId>
+    <con:status>ENABLED</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>e33041af-4efa-4adb-bc66-3a91a397b60c</con:testStepId>
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>
