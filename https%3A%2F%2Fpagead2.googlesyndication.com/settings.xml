@@ -3,7 +3,7 @@
   <con:settings>
     <con:setting id="8e75b140-5518-4c8a-843c-abaa35cac0e4fileName">https%3A%2F%2Fpagead2.googlesyndication.com</con:setting>
   </con:settings>
-  <con:definitionCache/>
+  <con:definitionCache type="TEXT" rootPart=""/>
   <con:endpoints>
     <con:endpoint>https://pagead2.googlesyndication.com</con:endpoint>
   </con:endpoints>

@@ -3,7 +3,7 @@
   <con:settings>
     <con:setting id="27b3e5e5-a351-4a0b-a6a9-3e4bb86600a0fileName">https%3A%2F%2Fdpm.demdex.net</con:setting>
   </con:settings>
-  <con:definitionCache/>
+  <con:definitionCache type="TEXT" rootPart=""/>
   <con:endpoints>
     <con:endpoint>https://dpm.demdex.net</con:endpoint>
   </con:endpoints>

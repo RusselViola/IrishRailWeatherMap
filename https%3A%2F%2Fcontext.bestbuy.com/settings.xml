@@ -3,7 +3,7 @@
   <con:settings>
     <con:setting id="5668c18d-45e1-4f00-852a-b30eda74c95dfileName">https%3A%2F%2Fcontext.bestbuy.com</con:setting>
   </con:settings>
-  <con:definitionCache/>
+  <con:definitionCache type="TEXT" rootPart=""/>
   <con:endpoints>
     <con:endpoint>https://context.bestbuy.com</con:endpoint>
   </con:endpoints>

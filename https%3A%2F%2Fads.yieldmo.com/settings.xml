@@ -3,7 +3,7 @@
   <con:settings>
     <con:setting id="0b180b0e-a183-42fb-bb31-f666e41e01f1fileName">https%3A%2F%2Fads.yieldmo.com</con:setting>
   </con:settings>
-  <con:definitionCache/>
+  <con:definitionCache type="TEXT" rootPart=""/>
   <con:endpoints>
     <con:endpoint>https://ads.yieldmo.com</con:endpoint>
   </con:endpoints>

@@ -3,7 +3,7 @@
   <con:settings>
     <con:setting id="252aca19-d86c-469f-a9a2-00ef56d57a32fileName">https%3A%2F%2Fsamples.openweathermap.org</con:setting>
   </con:settings>
-  <con:definitionCache/>
+  <con:definitionCache type="TEXT" rootPart=""/>
   <con:endpoints>
     <con:endpoint>http://localhost:8090/</con:endpoint>
     <con:endpoint>https://samples.openweathermap.org</con:endpoint>

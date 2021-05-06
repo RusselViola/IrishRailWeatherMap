@@ -74,7 +74,6 @@ exists( //ns1:ArrayOfObjTrainPositions/ns1:objTrainPositions/ns1:TrainLatitude)<
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="newParam" value=""/>
           <con:entry key="TrainType" value="${DataSource#TrainType}"/>
         </con:parameters>
         <con:parameterOrder>
@@ -232,6 +231,35 @@ exists( //ns1:ArrayOfObjTrainPositions/ns1:objTrainPositions/ns1:TrainLatitude)<
       <dataSourceStep>DataSource</dataSourceStep>
       <targetStep>Running Trains</targetStep>
       <discardResults>false</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request" id="c416f37c-deb6-41c0-8a04-bc9952587fda">
+    <con:settings/>
+    <con:config service="http://api.irishrail.ie" methodName="GetCurrentTrainsXML_WithTrainType" resourcePath="/realtime/realtime.asmx/getCurrentTrainsXML_WithTrainType" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="492d34ce-9d9b-48df-87a7-bee047e82889" mediaType="application/json">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://api.irishrail.ie</con:endpoint>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="d3ccc3b5-6596-43d4-bf74-04c721741c4e" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="e8b45422-7408-43c0-a8d5-81f7f246b16d" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters>
+          <con:entry key="TrainType" value="D"/>
+        </con:parameters>
+      </con:restRequest>
     </con:config>
   </con:testStep>
   <con:properties/>
