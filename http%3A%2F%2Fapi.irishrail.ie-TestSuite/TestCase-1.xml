@@ -78,7 +78,6 @@ exists( //ns1:ArrayOfObjTrainPositions/ns1:objTrainPositions/ns1:TrainLatitude)<
         </con:parameters>
         <con:parameterOrder>
           <con:entry>TrainType</con:entry>
-          <con:entry>newParam</con:entry>
         </con:parameterOrder>
         <con:environmentSpec>
           <con:entry environmentId="2eeeae02-9133-458b-8feb-15a4d82676ce">
@@ -237,10 +236,13 @@ exists( //ns1:ArrayOfObjTrainPositions/ns1:objTrainPositions/ns1:TrainLatitude)<
     <con:settings/>
     <con:config service="http://api.irishrail.ie" methodName="GetCurrentTrainsXML_WithTrainType" resourcePath="/realtime/realtime.asmx/getCurrentTrainsXML_WithTrainType" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="REST Request" id="492d34ce-9d9b-48df-87a7-bee047e82889" mediaType="application/json">
-        <con:settings/>
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://api.irishrail.ie</con:endpoint>
         <con:request/>
+        <con:originalUri>http://localhost/realtime/realtime.asmx/getCurrentTrainsXML_WithTrainType</con:originalUri>
         <con:assertion type="Valid HTTP Status Codes" id="d3ccc3b5-6596-43d4-bf74-04c721741c4e" name="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
@@ -256,9 +258,13 @@ exists( //ns1:ArrayOfObjTrainPositions/ns1:objTrainPositions/ns1:TrainLatitude)<
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
           <con:entry key="TrainType" value="D"/>
         </con:parameters>
+        <con:parameterOrder>
+          <con:entry>TrainType</con:entry>
+        </con:parameterOrder>
       </con:restRequest>
     </con:config>
   </con:testStep>

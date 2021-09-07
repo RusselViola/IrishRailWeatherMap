@@ -68,12 +68,10 @@ exists( //ns1:ArrayOfObjTrainPositions/ns1:objTrainPositions/ns1:TrainLatitude)<
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="newParam" value=""/>
           <con:entry key="TrainType" value="${DataSource#TrainType}"/>
         </con:parameters>
         <con:parameterOrder>
           <con:entry>TrainType</con:entry>
-          <con:entry>newParam</con:entry>
         </con:parameterOrder>
         <con:environmentSpec>
           <con:entry environmentId="2eeeae02-9133-458b-8feb-15a4d82676ce">

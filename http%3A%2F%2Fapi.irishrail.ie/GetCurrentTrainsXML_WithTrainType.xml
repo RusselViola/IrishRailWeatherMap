@@ -15,14 +15,7 @@
   </con:parameters>
   <con:method name="GetCurrentTrainsXML_WithTrainType" id="b2b99252-635e-4787-8276-997a8f11ff5b" method="GET">
     <con:settings/>
-    <con:parameters>
-      <con:parameter required="true">
-        <con:name>newParam</con:name>
-        <con:value/>
-        <con:style>QUERY</con:style>
-        <con:default/>
-      </con:parameter>
-    </con:parameters>
+    <con:parameters></con:parameters>
     <con:representation type="RESPONSE">
       <con:mediaType>text/xml; charset=utf-8</con:mediaType>
       <con:status>200</con:status>
@@ -64,7 +57,6 @@
       </con:parameters>
       <con:parameterOrder>
         <con:entry>TrainType</con:entry>
-        <con:entry>newParam</con:entry>
       </con:parameterOrder>
       <con:environmentSpec>
         <con:entry environmentId="2eeeae02-9133-458b-8feb-15a4d82676ce">
