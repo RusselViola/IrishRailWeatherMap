@@ -218,6 +218,52 @@ exists( //ns1:ArrayOfObjTrainPositions/ns1:objTrainPositions/ns1:TrainLatitude)<
       </con:restRequest>
     </con:config>
   </con:testStep>
+  <con:testStep type="restrequest" name="NewRequestonBranch" id="fbb733a8-e73f-424d-85ed-8a4c3aa088a1">
+    <con:settings/>
+    <con:config service="http://api.irishrail.ie" resourcePath="/realtime/realtime.asmx/getCurrentTrainsXML_WithTrainType" methodName="GetCurrentTrainsXML_WithTrainType" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="NewRequestonBranch" id="bd9b52a2-759c-48d7-a956-64daca369fa8" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://api.irishrail.ie</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://api.irishrail.ie/realtime/realtime.asmx/getCurrentTrainsXML_WithTrainType</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="52a990a3-a7e1-4aeb-8522-25c71c98d988" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="dfeb848b-5867-4414-a063-9b145d03881e" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="TrainType" value="D"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>TrainType</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="2eeeae02-9133-458b-8feb-15a4d82676ce">
+            <con:authProfile>No Authorization</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="0325dd47-62b3-42a0-bb96-3ab14a8e2ab9">
+            <con:authProfile>No Authorization</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="96e6d0f6-2929-4e6c-aac5-59044e9c4ba0">
+            <con:authProfile>No Authorization</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
   <con:testStep type="delay" name="1000" id="dbbfd726-24d7-4420-86a4-0c3d97ed1dba">
     <con:settings/>
     <con:config>
