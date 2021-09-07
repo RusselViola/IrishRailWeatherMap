@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Sodar" path="/getconfig/sodar" id="80f8ce5c-c057-497a-9121-369c7b28da9b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="80f8ce5c-c057-497a-9121-369c7b28da9bfileName">Sodar</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Sodar" id="8fcbe031-fb85-43f6-b111-9e7f423c65d1" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>sv</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>tid</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>tv</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>st</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Origin</con:name>
+        <con:style>HEADER</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="e069a70f-2273-406e-bb2e-6822cbf5146d" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Origin" value="https://www.bestbuy.com"/>
+  <con:entry key="Accept-Charset" value="ISO-8859-1,utf-8;q=0.7,*;q=0.7"/>
+  <con:entry key="Accept" value="*/*"/>
+  <con:entry key="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/609.1 (KHTML, like Gecko) JavaFX/15 Safari/609.1"/>
+  <con:entry key="Referer" value="https://www.bestbuy.com/"/>
+  <con:entry key="Accept-Encoding" value="gzip"/>
+  <con:entry key="Accept-Language" value="en-us;q=0.8,en;q=0.7"/>
+</xml-fragment>]]></con:setting>
+      </con:settings>
+      <con:endpoint>https://pagead2.googlesyndication.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://pagead2.googlesyndication.com/getconfig/sodar</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="Origin" value="https://www.bestbuy.com"/>
+        <con:entry key="st" value="env"/>
+        <con:entry key="tv" value="2021021801"/>
+        <con:entry key="sv" value="200"/>
+        <con:entry key="tid" value="gpt"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>sv</con:entry>
+        <con:entry>tid</con:entry>
+        <con:entry>tv</con:entry>
+        <con:entry>st</con:entry>
+        <con:entry>Origin</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

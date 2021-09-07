@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Weather" path="/data/2.5/weather" id="d7133417-f6d9-4501-8829-4d756ee8a737" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d7133417-f6d9-4501-8829-4d756ee8a737fileName">Weather</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Weather" id="23fceb46-78ef-4b52-b905-1761c268f2d5" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>q</con:name>
+        <con:value>boston,uk</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>boston,uk</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>appid</con:name>
+        <con:value>b6907d289e10d714a6e88b30761fae22</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>b6907d289e10d714a6e88b30761fae22</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:weat="https://samples.openweathermap.org/data/2.5/weather">weat:Response</con:element>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType xsi:nil="true"/>
+      <con:status>0</con:status>
+      <con:params/>
+      <con:element>data</con:element>
+    </con:representation>
+    <con:representation type="FAULT">
+      <con:mediaType xsi:nil="true"/>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:element>data</con:element>
+    </con:representation>
+    <con:representation type="FAULT">
+      <con:mediaType>application/json;charset=utf-8</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:element xmlns:weat="https://samples.openweathermap.org/data/2.5/weather">weat:Fault</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="fe2a434a-dc77-4b55-83c5-9fad8f09b521" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://samples.openweathermap.org</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="q" value="boston,uk"/>
+        <con:entry key="appid" value="b6907d289e10d714a6e88b30761fae22"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>q</con:entry>
+        <con:entry>appid</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

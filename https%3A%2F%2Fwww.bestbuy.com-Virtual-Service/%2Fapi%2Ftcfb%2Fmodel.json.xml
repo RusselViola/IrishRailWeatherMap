@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/api/tcfb/model.json" method="GET" resourcePath="/api/tcfb/model.json" id="a6d488f9-5414-4c1e-92df-217b1bc51a82" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a6d488f9-5414-4c1e-92df-217b1bc51a82fileName">%2Fapi%2Ftcfb%2Fmodel.json</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="63ad88bb-c734-48c8-bc05-652020130042" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

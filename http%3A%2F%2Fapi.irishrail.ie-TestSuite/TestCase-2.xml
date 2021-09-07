@@ -80,6 +80,9 @@ exists( //ns1:ArrayOfObjTrainPositions/ns1:objTrainPositions/ns1:TrainLatitude)<
           <con:entry environmentId="0325dd47-62b3-42a0-bb96-3ab14a8e2ab9">
             <con:authProfile>No Authorization</con:authProfile>
           </con:entry>
+          <con:entry environmentId="96e6d0f6-2929-4e6c-aac5-59044e9c4ba0">
+            <con:authProfile>No Authorization</con:authProfile>
+          </con:entry>
         </con:environmentSpec>
       </con:restRequest>
     </con:config>
@@ -200,6 +203,9 @@ exists( //ns1:ArrayOfObjTrainPositions/ns1:objTrainPositions/ns1:TrainLatitude)<
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
           <con:entry environmentId="0325dd47-62b3-42a0-bb96-3ab14a8e2ab9">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="96e6d0f6-2929-4e6c-aac5-59044e9c4ba0">
             <con:authProfile>Inherit From Parent</con:authProfile>
           </con:entry>
         </con:environmentSpec>

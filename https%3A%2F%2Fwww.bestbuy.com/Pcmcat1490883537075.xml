@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Pcmcat1490883537075" path="/apeplanet/v1/select/pcmcat1490883537075" id="ae839313-5b66-4d30-9658-ee08be16d55b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ae839313-5b66-4d30-9658-ee08be16d55bfileName">Pcmcat1490883537075</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Pcmcat1490883537075" id="e8a439a5-e604-4be4-83f6-96e749dcbf6e" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>deviceClass</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>vt</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>dma</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>tierCode</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>userAgent</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>numberOfActionsToPlay</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>X-CLIENT-ID</con:name>
+        <con:style>HEADER</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="8ac0a7d8-7ed6-4ab9-b896-adb3f97098ea" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Accept-Charset" value="ISO-8859-1,utf-8;q=0.7,*;q=0.7"/>
+  <con:entry key="Accept" value="*/*"/>
+  <con:entry key="X-CLIENT-ID" value="BROWSE"/>
+  <con:entry key="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/609.1 (KHTML, like Gecko) JavaFX/15 Safari/609.1"/>
+  <con:entry key="Referer" value="https://www.bestbuy.com/"/>
+  <con:entry key="Accept-Encoding" value="gzip"/>
+  <con:entry key="Accept-Language" value="en-us;q=0.8,en;q=0.7"/>
+</xml-fragment>]]></con:setting>
+      </con:settings>
+      <con:endpoint>https://www.bestbuy.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://www.bestbuy.com/apeplanet/v1/select/pcmcat1490883537075</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="numberOfActionsToPlay" value="3"/>
+        <con:entry key="X-CLIENT-ID" value="BROWSE"/>
+        <con:entry key="deviceClass" value="l"/>
+        <con:entry key="dma" value="506"/>
+        <con:entry key="tierCode" value="%20"/>
+        <con:entry key="userAgent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/609.1 (KHTML, like Gecko) JavaFX/15 Safari/609.1"/>
+        <con:entry key="vt" value="da5335c4-76d5-11eb-a5e0-0a2e8ef7818b"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>deviceClass</con:entry>
+        <con:entry>vt</con:entry>
+        <con:entry>dma</con:entry>
+        <con:entry>tierCode</con:entry>
+        <con:entry>userAgent</con:entry>
+        <con:entry>numberOfActionsToPlay</con:entry>
+        <con:entry>X-CLIENT-ID</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

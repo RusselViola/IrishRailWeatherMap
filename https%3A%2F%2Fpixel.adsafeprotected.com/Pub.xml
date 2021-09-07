@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Pub" path="/services/pub" id="402e058a-e307-4222-84a0-ac81a864e92f" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="402e058a-e307-4222-84a0-ac81a864e92ffileName">Pub</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Pub" id="1f84218b-510e-4374-a61e-9e781d71e754" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>anId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>slot</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>wr</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>sr</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>sessionId</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>url</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Origin</con:name>
+        <con:style>HEADER</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="57c805b0-bd06-4673-b23f-eb0c45692933" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Origin" value="https://www.bestbuy.com"/>
+  <con:entry key="Accept-Charset" value="ISO-8859-1,utf-8;q=0.7,*;q=0.7"/>
+  <con:entry key="Accept" value="*/*"/>
+  <con:entry key="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/609.1 (KHTML, like Gecko) JavaFX/15 Safari/609.1"/>
+  <con:entry key="Referer" value="https://www.bestbuy.com/"/>
+  <con:entry key="Accept-Encoding" value="gzip"/>
+  <con:entry key="Accept-Language" value="en-us;q=0.8,en;q=0.7"/>
+</xml-fragment>]]></con:setting>
+      </con:settings>
+      <con:endpoint>https://pixel.adsafeprotected.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://pixel.adsafeprotected.com/services/pub</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="Origin" value="https://www.bestbuy.com"/>
+        <con:entry key="anId" value="931017"/>
+        <con:entry key="slot" value="{id:gpt-shop-display-ad-58910cf0-1b3e-460b-a8f6-f7b9bd31ee4b,ss:[728.90],p:/6011/BestBuyDesktopWeb/best_buy,t:display}"/>
+        <con:entry key="wr" value="1532.661"/>
+        <con:entry key="sessionId" value="e0716691-3c73-017d-081b-92c77668fd3f"/>
+        <con:entry key="url" value="https%3A%2F%2Fwww.bestbuy.com%2F"/>
+        <con:entry key="sr" value="1920.1080"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>anId</con:entry>
+        <con:entry>slot</con:entry>
+        <con:entry>wr</con:entry>
+        <con:entry>sr</con:entry>
+        <con:entry>sessionId</con:entry>
+        <con:entry>url</con:entry>
+        <con:entry>Origin</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

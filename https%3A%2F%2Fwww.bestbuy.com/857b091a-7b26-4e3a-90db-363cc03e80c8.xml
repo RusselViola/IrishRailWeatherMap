@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="857b091a-7b26-4e3a-90db-363cc03e80c8" path="/browse-api/1.0/pageConfiguration/bbypres/pcmcat1490883537075/857b091a-7b26-4e3a-90db-363cc03e80c8" id="70a57a6f-2668-40ab-9639-6e7d4fb8a6d5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="70a57a6f-2668-40ab-9639-6e7d4fb8a6d5fileName">857b091a-7b26-4e3a-90db-363cc03e80c8</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="857b091a-7b26-4e3a-90db-363cc03e80c8" id="63e2c136-a2e6-4579-8745-879f38f596e0" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>x-request-id</con:name>
+        <con:style>HEADER</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="8f2870a5-dac2-4ac6-b063-b77db16a25e7" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="x-request-id" value="widget-dds"/>
+  <con:entry key="Accept-Charset" value="ISO-8859-1,utf-8;q=0.7,*;q=0.7"/>
+  <con:entry key="Accept" value="*/*"/>
+  <con:entry key="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/609.1 (KHTML, like Gecko) JavaFX/15 Safari/609.1"/>
+  <con:entry key="Referer" value="https://www.bestbuy.com/"/>
+  <con:entry key="Accept-Encoding" value="gzip"/>
+  <con:entry key="Accept-Language" value="en-us;q=0.8,en;q=0.7"/>
+</xml-fragment>]]></con:setting>
+      </con:settings>
+      <con:endpoint>https://www.bestbuy.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://www.bestbuy.com/browse-api/1.0/pageConfiguration/bbypres/pcmcat1490883537075/857b091a-7b26-4e3a-90db-363cc03e80c8</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="x-request-id" value="widget-dds"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>x-request-id</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

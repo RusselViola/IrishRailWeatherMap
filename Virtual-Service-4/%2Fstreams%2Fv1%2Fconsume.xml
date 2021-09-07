@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/streams/v1/consume" method="POST" resourcePath="/streams/v1/consume" id="8ab15100-240c-4ff2-ae20-6bd2b6db768d" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8ab15100-240c-4ff2-ae20-6bd2b6db768dfileName">%2Fstreams%2Fv1%2Fconsume</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SCRIPT</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:parameterDispatcherRuleContainer/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="1e4bab94-ffeb-415f-9f36-d273baf249a3" httpResponseStatus="200" mediaType="application/json" encoding="UTF-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" dataSource="">
+    <con:settings/>
+    <con:responseContent>69cdb572-76d6-11eb-a5e0-0a2e8ef7818b</con:responseContent>
+    <con:header>
+      <con:name>Strict-Transport-Security</con:name>
+      <con:value>max-age=15768000</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Cache-Control</con:name>
+      <con:value>max-age=0, no-cache, no-store</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>https://www.bestbuy.com</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Credentials</con:name>
+      <con:value>true</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>keep-alive</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Pragma</con:name>
+      <con:value>no-cache</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Expires</con:name>
+      <con:value>Wed, 24 Feb 2021 19:28:13 GMT</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Employment</con:name>
+      <con:value>If you are reading this, consider a job at BestBuy.com http://www.bestbuy-jobs.com/job-family/all-corporate-careers/</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Wed, 24 Feb 2021 19:28:13 GMT</con:value>
+    </con:header>
+  </con:response>
+  <con:response name="Response 2" id="2c4d1270-4bb4-4160-91c1-3469b7133f54" httpResponseStatus="200" mediaType="application/json" encoding="UTF-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" dataSource="">
+    <con:settings/>
+    <con:responseContent>69cdb572-76d6-11eb-a5e0-0a2e8ef7818b</con:responseContent>
+    <con:header>
+      <con:name>Strict-Transport-Security</con:name>
+      <con:value>max-age=15768000</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Cache-Control</con:name>
+      <con:value>max-age=0, no-cache, no-store</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>https://www.bestbuy.com</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Credentials</con:name>
+      <con:value>true</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>keep-alive</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Pragma</con:name>
+      <con:value>no-cache</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Expires</con:name>
+      <con:value>Wed, 24 Feb 2021 19:28:16 GMT</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Employment</con:name>
+      <con:value>If you are reading this, consider a job at BestBuy.com http://www.bestbuy-jobs.com/job-family/all-corporate-careers/</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Wed, 24 Feb 2021 19:28:16 GMT</con:value>
+    </con:header>
+  </con:response>
+  <con:response name="Response 3" id="dfabf2f2-769c-4ca4-9dc1-df1a646125a1" httpResponseStatus="200" mediaType="application/json" encoding="UTF-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" dataSource="">
+    <con:settings/>
+    <con:responseContent>69cdb572-76d6-11eb-a5e0-0a2e8ef7818b</con:responseContent>
+    <con:header>
+      <con:name>Strict-Transport-Security</con:name>
+      <con:value>max-age=15768000</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Cache-Control</con:name>
+      <con:value>max-age=0, no-cache, no-store</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Origin</con:name>
+      <con:value>https://www.bestbuy.com</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Access-Control-Allow-Credentials</con:name>
+      <con:value>true</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Connection</con:name>
+      <con:value>keep-alive</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Pragma</con:name>
+      <con:value>no-cache</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Expires</con:name>
+      <con:value>Wed, 24 Feb 2021 19:28:14 GMT</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Employment</con:name>
+      <con:value>If you are reading this, consider a job at BestBuy.com http://www.bestbuy-jobs.com/job-family/all-corporate-careers/</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Wed, 24 Feb 2021 19:28:14 GMT</con:value>
+    </con:header>
+  </con:response>
+</con:restMockAction>

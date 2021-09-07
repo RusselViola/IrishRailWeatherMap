@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/api/1.0/carousel/hooklogic" method="GET" resourcePath="/api/1.0/carousel/hooklogic" id="2f31327b-ec8b-4736-aa86-89193efc5440" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2f31327b-ec8b-4736-aa86-89193efc5440fileName">%2Fapi%2F1.0%2Fcarousel%2Fhooklogic</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="43f47f13-09bc-4118-a4d1-e96ef3f9fa55" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

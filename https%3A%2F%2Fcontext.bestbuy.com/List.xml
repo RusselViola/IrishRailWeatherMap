@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="List" path="/api/recommendations/list" id="88a732fd-c18a-4cd0-96b9-4b7c1673fe03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="88a732fd-c18a-4cd0-96b9-4b7c1673fe03fileName">List</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="List" id="22743d0b-c4db-4bba-b283-729a53e5c15a" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>src</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>plmt</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>apiKey</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>pageSize</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>vt</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>subplmt</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Origin</con:name>
+        <con:style>HEADER</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="5472c8de-a0aa-4317-b862-efaf8ca088db" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Origin" value="https://www.bestbuy.com"/>
+  <con:entry key="Accept-Charset" value="ISO-8859-1,utf-8;q=0.7,*;q=0.7"/>
+  <con:entry key="Accept" value="*/*"/>
+  <con:entry key="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/609.1 (KHTML, like Gecko) JavaFX/15 Safari/609.1"/>
+  <con:entry key="Referer" value="https://www.bestbuy.com/"/>
+  <con:entry key="Accept-Encoding" value="gzip"/>
+  <con:entry key="Accept-Language" value="en-us;q=0.8,en;q=0.7"/>
+</xml-fragment>]]></con:setting>
+      </con:settings>
+      <con:endpoint>https://context.bestbuy.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://context.bestbuy.com/api/recommendations/list</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="Origin" value="https://www.bestbuy.com"/>
+        <con:entry key="apiKey" value="D50"/>
+        <con:entry key="src" value="dotcom-l"/>
+        <con:entry key="plmt" value="ghp"/>
+        <con:entry key="pageSize" value="15"/>
+        <con:entry key="vt" value="da5335c4-76d5-11eb-a5e0-0a2e8ef7818b"/>
+        <con:entry key="subplmt" value="be0c78f8-cc60-4414-aa27-058521107900,d9d7d91c-c21b-4c95-8c9e-f0e12ee83dd4,d171e20a-d558-45be-b744-ee60bddfbc2d"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>src</con:entry>
+        <con:entry>plmt</con:entry>
+        <con:entry>apiKey</con:entry>
+        <con:entry>pageSize</con:entry>
+        <con:entry>vt</con:entry>
+        <con:entry>subplmt</con:entry>
+        <con:entry>Origin</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

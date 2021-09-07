@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/basket/v1/basketCount" method="GET" resourcePath="/basket/v1/basketCount" id="06d7ac67-e60e-4c54-a8bc-6c7a936652e4" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="06d7ac67-e60e-4c54-a8bc-6c7a936652e4fileName">%2Fbasket%2Fv1%2FbasketCount</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="5759e86e-ae1e-42ab-b9bb-d2dfddad95ce" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

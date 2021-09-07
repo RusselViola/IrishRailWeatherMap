@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/apeplanet/v1/select/pcmcat1490883537075" method="GET" resourcePath="/apeplanet/v1/select/pcmcat1490883537075" id="16ba62ec-658d-42fb-bef6-d4573681d712" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="16ba62ec-658d-42fb-bef6-d4573681d712fileName">%2Fapeplanet%2Fv1%2Fselect%2Fpcmcat1490883537075</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="a8ebf9c7-18ce-44d5-b24b-1f6b77020db9" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

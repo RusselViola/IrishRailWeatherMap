@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="5668c18d-45e1-4f00-852a-b30eda74c95d" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://context.bestbuy.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5668c18d-45e1-4f00-852a-b30eda74c95dfileName">https%3A%2F%2Fcontext.bestbuy.com</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart=""/>
+  <con:endpoints>
+    <con:endpoint>https://context.bestbuy.com</con:endpoint>
+  </con:endpoints>
+</con:interface>

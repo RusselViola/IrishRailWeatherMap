@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/streams/v3/RECENTLY_VIEWED" method="GET" resourcePath="/streams/v3/RECENTLY_VIEWED" id="4243cf70-e093-46ff-9fca-0a1c56469a6e" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4243cf70-e093-46ff-9fca-0a1c56469a6efileName">%2Fstreams%2Fv3%2FRECENTLY_VIEWED</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="8dbf5e0e-3a2b-4f02-be83-501e63c02829" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>
