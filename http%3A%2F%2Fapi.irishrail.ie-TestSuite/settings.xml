@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testSuite id="94655bb2-be89-4d54-a66c-5047642c9c64" name="http://api.irishrail.ie TestSuite" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="94655bb2-be89-4d54-a66c-5047642c9c64" name="http://api.irishrail.ie TestSuite">
+  <con:settings id="784e3cf3-dc0d-4c0b-8fed-24790dfc92c4">
     <con:setting id="94655bb2-be89-4d54-a66c-5047642c9c64fileName">http%3A%2F%2Fapi.irishrail.ie-TestSuite</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>

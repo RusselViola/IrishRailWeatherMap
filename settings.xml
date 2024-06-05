@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="5f9ff849-af05-4862-b53a-eaae13d77bbb" activeEnvironment="recordWeather" name="IrishRail API" lastOpened="2017-02-03T15:39:31.367-05:00" resourceRoot="${projectDir}" soapui-version="6.0.0" abortOnError="false" runType="SEQUENTIAL" encryptionMode="Not encrypted" updated="3.3.2" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project xmlns:con="http://eviware.com/soapui/config" id="5f9ff849-af05-4862-b53a-eaae13d77bbb" activeEnvironment="Default environment" name="IrishRail API" lastOpened="2017-02-03T15:39:31.367-05:00" resourceRoot="${projectDir}" soapui-version="6.0.0" abortOnError="false" runType="SEQUENTIAL" encryptionMode="Not encrypted" updated="3.53.0" compositeProjectFormat="1.3" projectVersion="">
   <con:settings>
     <con:setting id="5f9ff849-af05-4862-b53a-eaae13d77bbbfileName">IrishRail-API</con:setting>
   </con:settings>

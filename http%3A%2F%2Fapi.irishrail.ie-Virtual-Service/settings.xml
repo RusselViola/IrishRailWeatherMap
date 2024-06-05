@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:restMockService id="32142209-feef-4ca8-86dd-c0de19072b1a" port="8088" path="/" host="localhost" name="http://api.irishrail.ie Virtual Service" routeModeEnabled="false" routeEndpoint="http://api.irishrail.ie" maxNumberOfRoutedResponse="100" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:restMockService xmlns:con="http://eviware.com/soapui/config" id="32142209-feef-4ca8-86dd-c0de19072b1a" port="8088" path="/" host="localhost" name="http://api.irishrail.ie Virtual Service" routeModeEnabled="false" routeEndpoint="http://api.irishrail.ie" maxNumberOfRoutedResponse="100">
+  <con:settings id="82886d9a-f2d0-4ee9-b262-94d435636055">
     <con:setting id="32142209-feef-4ca8-86dd-c0de19072b1afileName">http%3A%2F%2Fapi.irishrail.ie-Virtual-Service</con:setting>
   </con:settings>
   <con:properties/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="Weather" path="/data/2.5/weather" id="13e17673-f1ff-498e-a455-62827c0709c4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="Weather" path="/data/2.5/weather" id="13e17673-f1ff-498e-a455-62827c0709c4">
+  <con:settings id="ba141f61-0b69-4a21-946c-89f8c7d2ff66">
     <con:setting id="13e17673-f1ff-498e-a455-62827c0709c4fileName">Weather</con:setting>
   </con:settings>
   <con:parameters>
@@ -51,9 +51,12 @@
       <con:element xmlns:weat="http://api.openweathermap.org/data/2.5/weather">weat:Response</con:element>
     </con:representation>
     <con:request name="Request 1" id="b8fbdd5d-8f7b-4ece-b516-63fdf28e91ac" mediaType="application/json">
-      <con:settings/>
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:endpoint>http://api.openweathermap.org</con:endpoint>
       <con:request/>
+      <con:originalUri>http://api.openweathermap.org/data/2.5/weather</con:originalUri>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>

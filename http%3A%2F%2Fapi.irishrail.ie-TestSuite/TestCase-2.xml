@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="12695f6d-2bae-4b6e-9451-a2503decd151" discardOkResults="true" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TestCase 2" searchProperties="true" maxResults="0" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="12695f6d-2bae-4b6e-9451-a2503decd151" discardOkResults="true" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TestCase 2" searchProperties="true" maxResults="0" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="">
+  <con:settings id="ec3123f1-625c-4dfe-8a90-01f2fa196bcd">
     <con:setting id="12695f6d-2bae-4b6e-9451-a2503decd151fileName">TestCase-2</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:testStep type="datasource" name="DataSource" id="6cbde708-21d1-4040-bb94-9e7fecf2a63c">
     <con:settings/>
-    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:DataSourceStep">
       <con:dataSource type="Grid">
         <con:configuration>
           <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
@@ -33,7 +33,7 @@
   </con:testStep>
   <con:testStep type="restrequest" name="Running Trains" id="42c954ad-0dcc-48d2-ab35-38d14a8a4dbd">
     <con:settings/>
-    <con:config service="http://api.irishrail.ie" resourcePath="/realtime/realtime.asmx/getCurrentTrainsXML_WithTrainType" methodName="GetCurrentTrainsXML_WithTrainType" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="http://api.irishrail.ie" resourcePath="/realtime/realtime.asmx/getCurrentTrainsXML_WithTrainType" methodName="GetCurrentTrainsXML_WithTrainType" xsi:type="con:RestRequestStep">
       <con:restRequest name="Running Trains" id="bd9b52a2-759c-48d7-a956-64daca369fa8" mediaType="application/json">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -86,7 +86,7 @@ exists( //ns1:ArrayOfObjTrainPositions/ns1:objTrainPositions/ns1:TrainLatitude)<
   </con:testStep>
   <con:testStep type="restrequest" name="Weather from Second Train" id="07a45bd0-e5cd-4e89-b6b3-44384c152b25">
     <con:settings/>
-    <con:config service="http://api.openweathermap.org" resourcePath="/data/2.5/weather" methodName="Weather" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="http://api.openweathermap.org" resourcePath="/data/2.5/weather" methodName="Weather" xsi:type="con:RestRequestStep">
       <con:restRequest name="Weather from Second Train" id="b8fbdd5d-8f7b-4ece-b516-63fdf28e91ac" mediaType="application/json">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
